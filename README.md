@@ -26,5 +26,18 @@
 
   ```
   select * from employee where username like '%kumar'
-  db.employee.find({'empname':{ $regex: /kumar/i}}
+  db.employee.find({'username':{ $regex: /kumar/i}}
   ```
+  
+### in 
+
+  ```
+  db.employee.find({'empid':{$in:[<value1>,<value2>,...<valueN>]})
+  ```
+  
+### set
+
+  ```
+  db.employee.update({empid:1001},{$set:{"empname":"cooper"}})
+  ```
+
