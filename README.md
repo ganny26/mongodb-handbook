@@ -20,3 +20,11 @@
   ...
   bulk.execute();
   ```
+  
+  
+### like (regex)
+
+  ```
+  select * from employee where username like '%kumar'
+  db.employee.find({'empname':{ $regex: /kumar/i}}
+  ```
