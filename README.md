@@ -44,5 +44,13 @@
   ```
   db.employee.update({empid:1001},{$set:{"empname":"cooper"}})
   ```
+   
+### find
+
+  ```
+  db.collection.find( <query filter>, <projection> )
+  ```
+  
+  
   Mongo v3.4
 
