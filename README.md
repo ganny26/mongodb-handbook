@@ -51,6 +51,11 @@
   db.collection.find( <query filter>, <projection> )
   ```
   
+### avoid duplicate insertion by creating compound indexes
+  ```
+  db.collection.ensureIndex( { user: 1, title: 1, Bank: 1 }, {unique:true} )
   
+  db.subscribemodels.ensureIndex( { firstname: 1, lastname: 1, email: 1 }, {unique:true} )
+  ```
   Mongo v3.4
 
